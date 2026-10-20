@@ -1,7 +1,7 @@
+import Link from 'next/link';
 import type { Metadata } from "next";
 import { SITE } from "@/lib/site";
 import PrintButton from "@/components/PrintButton";
-
 export const metadata: Metadata = {
   title: `${SITE.name} — CV`,
 };
@@ -11,9 +11,9 @@ export default function CVPage() {
     <main className="min-h-screen bg-[#0B0F17] px-4 py-10 text-mist-50">
       <div className="mx-auto max-w-3xl">
         <div className="mb-6 flex items-center justify-between print:hidden">
-          <a href="/" className="font-mono text-xs uppercase tracking-[0.16em] text-mist-400">
+          <link href="/" className="font-mono text-xs uppercase tracking-[0.16em] text-mist-400">
             ← Back to portfolio
-          </a>
+          </link>
           <PrintButton />
         </div>
 
